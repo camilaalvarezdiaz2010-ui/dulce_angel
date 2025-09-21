@@ -1,0 +1,8 @@
+.inicio{
+    display: flex;
+    padding-top: 20vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+}
