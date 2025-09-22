@@ -1,67 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="pages/Registro/Registrarse.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="components/navbar/navbar.css">
 </head>
-<body>
-    <div class="top-bar">
-        <div class="navbar">
-        <div class="content-logo">
-                <a href="index.html">
-                    <img src="global/pictures/logo/logo.jpeg" alt="Logo" class="logo">
-                </a>
-            </div>
-        <div class="menu">
-            <li><a href="pages/Accesories/accesories.html">Accesorios</a></li>
-            <li><a href="pages/deportivos/deportivos.html">Deportivos</a></li>
-            <li><a href="pages/tenis/tenis.html">Tenis</a></li>
-            <li><a href="pages/Nosotros/nosotros.html">Nosotros</a></li>
-        </div>
-    </div>
-    </div>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<section class="vh-65">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="../../global/pictures/logo/logo.jpeg" alt="">
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
 
-    <div class="inicio">
+                  <form >
 
-        <div class="accesorios">
-            <h1>Accesorios</h1>
-            <div class="Accesorios-productos">
-                <img src="global/pictures/accesorios/billeteras1.jpeg" alt="">
-                <img src="global/pictures/accesorios/bolsodama1.jpeg" alt="">
-                <img src="global/pictures/accesorios/cangurosdama1.jpeg" alt="">
-                <img src="global/pictures/accesorios/bicerasmujer1.jpeg" alt="">
-                <img src="global/pictures/accesorios/canguroshombre2.jpeg" alt="">
-                <img src="global/pictures/accesorios/gorrahombre1.jpeg" alt="">
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-user-plus fa-2x me-3" style="color: #0069A3;"></i>
+                      <span class="h1 fw-bold mb-0">Inicia Sesión</span>
+                    </div>
+
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia sesión en una cuenta</h5>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="email" class="form-control form-control-lg" placeholder="Email"required  />
+                      <label class="form-label" for="email"></label>
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="password" class="form-control form-control-lg" placeholder="Contraseña" required minlength="6"/>
+                      <label class="form-label" for="password"></label>
+                    </div>
+                      <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="confirmPassword" class="form-control form-control-lg" placeholder="Repita la contraseña" required minlength="6" />
+                      <label class="form-label" for="confirmPassword"></label>
+                    </div>
+
+                    <div class="pt-1 mb-4">
+                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block"
+                        type="submit"><a href="pages/home/home.html">Iniciar sesion</a></button> 
+                    </div>
+
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">¿No tienes una cuenta? <a href="Registrarse.html"
+                        style="color: #393f81;">Registrate aquí</a></p>
+                   
+                  </form>
+
+                </div>
+              </div>
             </div>
-            <a href="pages/Accesories/accesories.html" class="btn">Ver más</a>
+          </div>
         </div>
-        <div class="deportivos">
-            <h1>Deportivos</h1>
-            <div class="Deportivos-productos">
-                <img src="global/pictures/deportivos/conjdeportivoh1.jpeg" alt="">
-                <img src="global/pictures/deportivos/depmujer1.jpeg" alt="">
-                <img src="global/pictures/deportivos/conjdeportivoh3.jpeg" alt="">
-                <img src="global/pictures/deportivos/depmujer2.jpeg" alt="">
-                <img src="global/pictures/deportivos/conjuntoH1.jpeg" alt="">
-                <img src="global/pictures/deportivos/depmujer3.jpeg" alt="">
-            </div>
-            <a type="button" href="pages/deportivos/deportivos.html" class="btn">Ver más</a>
-        </div>
-        <div class="tenis">
-        <h1>Tenis</h1>
-        <div class="tenis-productos">
-            <img src="global/pictures/tenis/tenisdama1.jpeg" alt="">
-            <img src="global/pictures/tenis/tenisH1.jpeg" alt="">
-            <img src="global/pictures/tenis/tenisdama2.jpeg" alt="">
-            <img src="global/pictures/tenis/tenisH2.jpeg" alt="">
-            <img src="global/pictures/tenis/tenisdama3.jpeg" alt="">
-            <img src="global/pictures/tenis/tenisH3.jpeg" alt="">
-        </div>
-        <a type="button" href="pages/tenis/tenis.html" class="btn">Ver más</a>
+      </div>
     </div>
-    <iframe src="components/footer/footer.html" frameborder="0" width="100%" height="100%"></iframe>
+  </section> 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<section class="vh-65">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="../../global/pictures/logo/logo.jpeg" alt="">
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+                  <form>
+
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-user-plus fa-2x me-3" style="color: #0069A3;"></i>
+                      <span class="h1 fw-bold mb-0">Registrate</span>
+                    </div>
+
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Crea tu cuenta</h5>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="fullName" class="form-control form-control-lg" placeholder="Nombres" required />
+                      <label class="form-label" for="fullName"></label>
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="username" class="form-control form-control-lg" placeholder="Apellidos" required />
+                      <label class="form-label" for="username"></label>
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="email" class="form-control form-control-lg" placeholder="Email"required  />
+                      <label class="form-label" for="email"></label>
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="password" class="form-control form-control-lg" placeholder="Contraseña" required />
+                      <label class="form-label" for="password"></label>
+                    </div>
+                      <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="password" id="confirmPassword" class="form-control form-control-lg" placeholder="Repita la contraseña" required />
+                      <label class="form-label" for="rePassword"></label>
+                    </div>
+
+                    <div class="pt-1 mb-4">
+                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block"
+                        type="submit"><a href="pages/home/home.html">Registrar</a></button>
+                    </div>
+
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">¿Ya tienes una cuenta? <a href="login.html"
+                        style="color: #393f81;">Inicia sesión aquí</a></p>
+                   
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<iframe src="../../components/footer/footer.html" frameborder="0" width="100%" height="100%"></iframe>
 </body>
 </html>
+
+    
